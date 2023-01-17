@@ -25,7 +25,7 @@ function BackgroundAnim() {
             value: "#0d47a1",
           },
         },
-        fpsLimit: 120,
+        fpsLimit: 60,
         interactivity: {
           events: {
             onClick: {
@@ -69,7 +69,7 @@ function BackgroundAnim() {
               default: "bounce",
             },
             random: false,
-            speed: 6,
+            speed: 3,
             straight: false,
           },
           number: {

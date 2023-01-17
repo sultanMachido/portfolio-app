@@ -1,14 +1,17 @@
-import React, { useCallback } from "react";
 import Header from "../components/Header";
-import HeroPage from "../components/HeroPage";
-import BackgroundAnim from "../components/BackgroundAnim";
+import HeroSection from "../components/HeroPage";
+import BackgroundAnimation from "../components/BackgroundAnim";
+import SkillsSection from "../components/SkillsPage";
 
 function IntroPage() {
   return (
     <>
-      <BackgroundAnim />
-      <Header />
-      <HeroPage />
+      <BackgroundAnimation />
+      <section className="relative pt-30">
+        <Header />
+        <HeroSection />
+      </section>
+      <SkillsSection />
     </>
   );
 }

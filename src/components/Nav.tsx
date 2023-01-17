@@ -32,7 +32,7 @@ function Nav() {
               href={list.link}
               ref={navLink}
               id={list.title}
-              className="text-lg"
+              className="text-lg text-white hover:border-b-2 hover:border-secondaryColor"
             >
               {list.title}
             </a>
