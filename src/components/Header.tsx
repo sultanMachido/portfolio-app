@@ -3,9 +3,9 @@ import Nav from "./Nav";
 
 function Header() {
   return (
-    <section className="flex justify-between text-sky-500 w-full">
+    <section className="flex items-baseline justify-between text-sky-500 w-full">
       <h1
-        className="pt-4 pl-8"
+        className="pt-4 pl-10"
         style={{
           fontFamily: "Rochester",
           fontWeight: "bold",

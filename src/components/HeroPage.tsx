@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import DevIllustration from "../images/dev.png";
+import style from "./styles/HeroPage.module.css";
 
 function HeroPage() {
   useEffect(() => {
@@ -28,7 +29,7 @@ function HeroPage() {
   }, []);
 
   return (
-    <div className=" flex justify-around  z-10 relative mt-20">
+    <div className=" flex justify-around  z-10 relative md:mt-20">
       <div>
         <p
           id="first-paragraph"
@@ -43,8 +44,7 @@ function HeroPage() {
           hi, i'm opeoluwa
         </p>
         <h1
-          className="pl-10 p-[0px] text-white"
-          style={{ fontSize: "90px", fontWeight: "bold" }}
+          className={`text-[36px] md:text-[90px] pl-10 p-[0px] text-white bold pt-[5px] font-bold`}
         >
           SOFTWARE
           <span className="text-secondaryColor">ENGINEER</span>
@@ -54,7 +54,7 @@ function HeroPage() {
           technologies like <br /> React,Typescript,Node JS,React Native,
         </p>
       </div>
-      <div className="pt-10">
+      <div className="pt-10 hidden md:block">
         <img src={DevIllustration} alt="" />
       </div>
     </div>

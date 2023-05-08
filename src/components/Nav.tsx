@@ -24,7 +24,7 @@ function Nav() {
   const navLink = useRef(null);
 
   return (
-    <div className="flex w-6/12">
+    <div className="hidden md:flex w-6/12">
       <ul className="flex justify-around w-full pt-4">
         {navList.map((list, index) => (
           <li key={index}>
