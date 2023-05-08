@@ -6,7 +6,6 @@ import type { Engine } from "tsparticles-engine";
 function BackgroundAnim() {
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     await loadFull(engine);
   }, []);
 
