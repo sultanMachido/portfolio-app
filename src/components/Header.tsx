@@ -15,7 +15,6 @@ function Header() {
       >
         Opeoluwa
       </h1>
-      <Nav />
     </section>
   );
 }

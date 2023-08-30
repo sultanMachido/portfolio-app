@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import DevIllustration from "../images/dev.png";
 import style from "./styles/HeroPage.module.css";
+import ContactLinks from "./ContactLinks";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 function HeroPage() {
   useEffect(() => {
@@ -31,31 +34,32 @@ function HeroPage() {
   return (
     <div className=" flex justify-around  z-10 relative md:mt-20">
       <div>
-        <p
-          id="first-paragraph"
-          className="text-white text-left pl-10 text-xl pt-40"
+        <h1
+          className="pt-4 pl-10 text-center"
           style={{
             fontFamily: "Rochester",
-            fontSize: "35px",
             fontWeight: "bold",
-            color: "#4EAF9E",
+            fontSize: "24px",
           }}
         >
-          hi, i'm opeoluwa
-        </p>
-        <h1
-          className={`text-[36px] md:text-[90px] pl-10 p-[0px] text-white bold pt-[5px] font-bold`}
-        >
-          SOFTWARE
-          <span className="text-secondaryColor">ENGINEER</span>
+          hi I'm
         </h1>
-        <p id="second-paragraph" className="text-white px-10 text-lg">
-          I am a Software Engineer with over 3 years of experience working with
-          technologies like <br /> React,Typescript,Node JS,React Native,
+        <h1
+          className={`text-center text-[36px] md:text-[90px] pl-10 p-[0px] text-secondaryColor bold font-bold`}
+        >
+          ADESINA OPEOLUWA
+        </h1>
+        <p
+          id="second-paragraph"
+          className="text-center px-10 font-bold text-lg"
+        >
+          FRONTEND. BACKEND. MOBILE APP DEVELOPMENT
         </p>
-      </div>
-      <div className="pt-10 hidden md:block">
-        <img src={DevIllustration} alt="" />
+        <ContactLinks />
+        <button className="shadow-md block mx-auto mt-10 w-[350px] h-[50px] bg-[lightblue] rounded-[50px]">
+          <FontAwesomeIcon icon={faDownload} />
+          Download My Resume
+        </button>
       </div>
     </div>
   );

@@ -24,3 +24,7 @@ h1{
   padding: 0px;
   margin: 0px;
 }
+
+a:active {
+  border-right: 1px solid blue;
+}

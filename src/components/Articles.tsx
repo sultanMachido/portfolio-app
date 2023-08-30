@@ -28,7 +28,7 @@ const articles = [
 
 const Articles = () => {
   return (
-    <section className="relative mt-[100px] mb-10">
+    <section className="relative mt-[100px] mb-10" id="articles">
       <h1 className="text-[90px] font-bold text-center text-white">ARTICLES</h1>
       <div className="flex flex-wrap ">
         {articles.map((article, index) => (
