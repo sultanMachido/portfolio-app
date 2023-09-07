@@ -35,39 +35,33 @@ const skills = [
     logo: CssLogo,
     skill: "CSS3",
   },
+  {
+    logo: "",
+    skill: "Node js",
+  },
 ];
 
 function SkillsPage() {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to("#skills_section_two", {
-      scrollTrigger: {
-        trigger: "#skills_section_two",
-        scrub: true,
-      },
-      x: -600,
-      duration: 5,
-    });
-  }, []);
   return (
     <section
       id="skills"
-      className="sm:block md:flex justify-between relative z-10 mt-40 text-white"
+      className="w-[85%] md:w-[80%] mx-auto mt-20 md:mt-40 text-white"
     >
-      <div id="skills_section_one">
-        <img src={SkillsImage} alt="" className="hidden md:block" />
+      <h1 className="text-[36px] md:text-[50px] font-bold text-center">
+        ABOUT ME
+      </h1>
+      <div>
+        <p className="leading-2 text-white text-lg text-center">
+          With over 4 years of experience in web application development, I've
+          honed my expertise in crafting robust and efficient solutions using
+          React.js, TypeScript, YII, and leveraging various AWS services like
+          Cognito, SQS, SNS, and Amplify. Beyond my technical accomplishments, I
+          bring a strong set of soft skills to the table that have proven
+          invaluable in my career.
+        </p>
       </div>
-      <div
-        id="skills_section_two"
-        className="pr-14 relative"
-        style={{
-          left: "500px",
-        }}
-      >
-        <h1 className="text-[90px] font-bold text-center md:text-right">
-          SKILLS
-        </h1>
-        <p className="text-white text-lg text-right">
+      <div id="skills_section_two">
+        <p className="text-white text-lg text-center">
           My main area of my expertise are front-end tools like:
         </p>
         <SkillsList skills={skills} />

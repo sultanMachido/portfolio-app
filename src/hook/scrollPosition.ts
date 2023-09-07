@@ -6,6 +6,8 @@ export const useScrollPosition = (sectionIds: string[]) => {
     const skillsSection = document.getElementById(sectionOfPageId);
     const rect = skillsSection?.getBoundingClientRect();
     if (rect && rect?.y <= 0 && rect?.y >= -rect.height) {
+      console.log(rect?.y, "sect");
+      console.log(window.scrollY, "window");
       return skillsSection?.id;
     }
 

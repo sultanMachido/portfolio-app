@@ -28,16 +28,18 @@ const articles = [
 
 const Articles = () => {
   return (
-    <section className="relative mt-[100px] mb-10" id="articles">
-      <h1 className="text-[90px] font-bold text-center text-white">ARTICLES</h1>
-      <div className="flex flex-wrap ">
+    <section className=" mt-[100px] mb-10" id="articles">
+      <h1 className="text-[36px] md:text-[50px] font-bold text-center text-white">
+        ARTICLES
+      </h1>
+      <div className="flex flex-wrap justify-center">
         {articles.map((article, index) => (
-          <div key={index} className="mb-10 w-[300px] bg-secondaryColor ml-10">
+          <div key={index} className="mb-10 w-[300px]  md:ml-10">
             <div className="w-[300px]">
               <img src={article.picture} alt="articles image" />
             </div>
             <div className="p-[10px]">
-              <a href={article.link} className="text-white">
+              <a href={article.link} className="font-bold text-md">
                 {article.title}
               </a>
             </div>

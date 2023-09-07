@@ -1,14 +1,14 @@
 const links = [
   {
-    url: "github.com/sultanMachido",
+    url: "https://www.github.com/sultanMachido",
     name: "Github",
   },
   {
-    url: "",
+    url: "https://www.linkedin.com/in/opeoluwa-adesina-725b8a10b/",
     name: "LinkedIn",
   },
   {
-    url: "",
+    url: "mailto:opehardesina@gmail.com",
     name: "Email",
   },
 ];

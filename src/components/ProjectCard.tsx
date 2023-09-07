@@ -6,13 +6,12 @@ type ProjectInfoType = {
   projectInfo: { image: string; title: string; link: string };
 };
 const ProjectCard = ({ projectInfo }: ProjectInfoType) => {
-  const [showTransparentCover, setShowTransparentCover] = useState(false);
   return (
     <li
-      className={`relative list-none w-100 md:w-3/12 bg-secondaryColor rounded-md mx-[10px] mb-[10px]`}
+      className={`list-none w-100 md:w-3/12 bg-secondaryColor rounded-md mx-[10px] mb-[10px]`}
     >
-      <div className="relative">
-        <div className={`z-0`}>
+      <div>
+        <div>
           <img src={projectInfo.image} />
         </div>
         <div>

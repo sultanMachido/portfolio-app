@@ -9,14 +9,11 @@ import { useEffect } from "react";
 
 function IntroPage() {
   return (
-    <section
-      onScroll={(e) => {
-        console.log(e);
-      }}
-    >
-      <Nav />
-      <div>
-        <Header />
+    <section className="flex">
+      <div className="w-[10%]">
+        <Nav />
+      </div>
+      <div className="w-[80%] ml-5 md:ml-0">
         <HeroSection />
         <SkillsSection />
         <Projects />

@@ -32,33 +32,25 @@ function HeroPage() {
   }, []);
 
   return (
-    <div className=" flex justify-around  z-10 relative md:mt-20">
+    <div className="mt-10 md:mt-20">
       <div>
         <h1
-          className="pt-4 pl-10 text-center"
-          style={{
-            fontFamily: "Rochester",
-            fontWeight: "bold",
-            fontSize: "24px",
-          }}
+          className={`text-center text-[50px] md:text-[90px] md:pl-10 p-[0px] text-secondaryColor bold font-bold`}
         >
-          hi I'm
-        </h1>
-        <h1
-          className={`text-center text-[36px] md:text-[90px] pl-10 p-[0px] text-secondaryColor bold font-bold`}
-        >
-          ADESINA OPEOLUWA
+          ADESINA M. OPEOLUWA
         </h1>
         <p
           id="second-paragraph"
-          className="text-center px-10 font-bold text-lg"
+          className="text-center text-white px-10 font-bold md:text-lg"
         >
-          FRONTEND. BACKEND. MOBILE APP DEVELOPMENT
+          A FRONTEND, BACKEND, & MOBILE APP DEVELOPER
         </p>
         <ContactLinks />
-        <button className="shadow-md block mx-auto mt-10 w-[350px] h-[50px] bg-[lightblue] rounded-[50px]">
-          <FontAwesomeIcon icon={faDownload} />
-          Download My Resume
+
+        <button className="font-bold shadow-md block mx-auto mt-10 w-[80%] md:w-[350px] h-[50px] bg-black text-white rounded-[50px]">
+          <a href="/Adesina Martins CV.pdf" id="resume">
+            Download Resume
+          </a>
         </button>
       </div>
     </div>

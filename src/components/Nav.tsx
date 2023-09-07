@@ -28,12 +28,9 @@ function Nav() {
     "portfolio",
     "articles",
   ]);
-  if (scrollPosition) {
-    console.log(scrollPosition, "id location");
-  }
 
   return (
-    <div className="fixed h-screen w-[5%] shadow-md">
+    <div className="fixed h-screen w-[45px] shadow-md">
       <ul className="block w-full p-[10px]">
         {navList.map((list, index) => (
           <li key={index} className="pb-[20px]">
@@ -43,7 +40,7 @@ function Nav() {
               id={list.title}
               className={`pr-[10px] text-md transform rotate-270 text-black hover:border-b-2 hover:border-secondaryColor ${
                 list.link === scrollPosition
-                  ? `border-r-2 border-secondaryColor`
+                  ? `border-r-[4px] border-black`
                   : ""
               }`}
               style={

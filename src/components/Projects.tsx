@@ -35,8 +35,8 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="relative" id="portfolio">
-      <h1 className="text-[90px] ml-10 mt-[100px] font-bold center text-secondaryColor">
+    <section className="h-auto mt-20 md:mt-40" id="portfolio">
+      <h1 className="text-[36px] md:text-[50px] font-bold text-center text-white">
         PROJECTS
       </h1>
       <ProjectList projects={projects} />
