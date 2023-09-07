@@ -62,7 +62,7 @@ function SkillsPage() {
       </div>
       <div id="skills_section_two">
         <p className="text-white text-lg text-center">
-          My main area of my expertise are front-end tools like:
+          Technologies i have worked with professionally include:
         </p>
         <SkillsList skills={skills} />
       </div>
