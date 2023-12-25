@@ -20,7 +20,7 @@ const ProjectList = ({ projects }: ProjectListType) => {
             <ProjectCard key={index} projectInfo={project} />
           ))}
       </div> */}
-      <div className="w-[80%] mx-auto rounded-md bg-black p-5">
+      {/* <div className="w-[80%] mx-auto rounded-md bg-black p-5">
         <div className="text-white flex justify-between p-2">
           <p className="text-white font-bold text-lg">Smart HR</p>
           <p>+</p>
@@ -43,7 +43,7 @@ const ProjectList = ({ projects }: ProjectListType) => {
             { skill: "Git" },
           ]}
         />
-      </div>
+      </div> */}
       <div className="w-[80%] mx-auto mt-2 rounded-md bg-black p-5">
         <div className="text-white flex justify-between p-2">
           <p className="text-white font-bold text-lg">Zipu</p>
