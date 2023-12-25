@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import useScrollPosition from "use-section-scroll-position";
+import { useScrollPosition } from "../hook/scrollPosition";
 
 type NavObj = {
   title: string;
