@@ -20,18 +20,22 @@ const ProjectList = ({ projects }: ProjectListType) => {
             <ProjectCard key={index} projectInfo={project} />
           ))}
       </div> */}
-      {/* <div className="w-[80%] mx-auto rounded-md bg-black p-5">
+      <div className="w-[80%] mx-auto rounded-md bg-black p-5">
         <div className="text-white flex justify-between p-2">
-          <p className="text-white font-bold text-lg">Smart HR</p>
+          <p className="text-white font-bold text-lg">Resume Writer</p>
           <p>+</p>
         </div>
         <div>
           <p className="leading-2 text-white text-lg">
-            This project involves leveraging Artificial Intelligence in HR
-            processes like shortlisting, employee onboarding, payroll management
-            etc.
+            This project involves leveraging the rich text editor feature of
+            draft js to build a resume builder.The resume created can be
+            downloaded after the user has been authenticated with the help of
+            supabase Google Oauth.
           </p>
-          <a href="https://www.eudoratech.com" className="text-secondaryColor">
+          <a
+            href="https://resume-writer.netlify.app/"
+            className="text-secondaryColor"
+          >
             View
           </a>
         </div>
@@ -41,9 +45,10 @@ const ProjectList = ({ projects }: ProjectListType) => {
             { skill: "Typescript" },
             { skill: "Tailwind CSS" },
             { skill: "Git" },
+            { skill: "Supabase" },
           ]}
         />
-      </div> */}
+      </div>
       <div className="w-[80%] mx-auto mt-2 rounded-md bg-black p-5">
         <div className="text-white flex justify-between p-2">
           <p className="text-white font-bold text-lg">Zipu</p>
